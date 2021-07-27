@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Segoe UI;
 }
 html,
 body {
@@ -39,9 +40,9 @@ body {
   height: 60%;
 }
 .navigation-list-li {
-  padding: 5% 5% 5% 20%;
   color: grey;
   position: relative;
+  cursor: pointer;
 }
 .navigation-list-li:first-child::before {
   content: "";
@@ -94,7 +95,7 @@ body {
   transform: scale(0.4);
 }
 .navigation-list-li:hover {
-  background-color: hotpink;
+  background-color: #bd194b;
   color: white;
 }
 .navigation-list-li:first-child:hover:before {
@@ -149,13 +150,15 @@ body {
 }
 
 .h2-title-nav {
-  padding: 5%;
-  padding-bottom: 10%;
+  padding: 10%;
   border-bottom: 1px solid grey;
 }
 .nav-link {
   text-decoration: none;
   color: inherit;
+  display: block;
+  width: 100%;
+  padding: 5% 5% 5% 20%;
 }
 .brief-information-container {
   height: 20%;
@@ -214,7 +217,8 @@ body {
 .more-info-span {
   color: grey;
   position: relative;
-  padding-left: 20px;
+  padding-left: 10%;
+  display: block;
 }
 .bg-green {
   background-color: green;
@@ -230,7 +234,7 @@ body {
 }
 .brief-svg-container {
   padding: 8%;
-  margin-top: -50px;
+  margin-top: -15%;
   position: absolute;
 }
 
@@ -289,7 +293,7 @@ body {
   box-shadow: 4px 4px 8px 5px rgba(34, 60, 80, 0.2);
   padding: 1%;
   position: relative;
-  min-height: 200px;
+  min-height: 260px;
   max-height: 400px;
 }
 .card-graphics-content {
@@ -321,7 +325,8 @@ body {
 .span-update-info {
   color: grey;
   position: relative;
-  padding: 5% 5% 5% 5%;
+  padding: 5% 5% 5% 8%;
+  display: block;
 }
 .span-update-info::before {
   content: "";
@@ -480,7 +485,7 @@ body {
   border: none;
 }
 .footer {
-  margin-left: 25%;
+  margin-left: 20%;
   height: 10%;
   padding: 2%;
   display: flex;
@@ -514,8 +519,11 @@ body {
   .card-brief {
     width: 49%;
     height: 40%;
-    padding: 4%;
+    padding: 0% 4% 4% 4%;
     font-size: 1.2rem;
+  }
+  .brief-svg-container {
+    margin-top: -10%;
   }
   .li-info-item-name {
     font-size: 1rem;
@@ -593,6 +601,9 @@ body {
   .li-footer {
     padding: 0 3% 0 3%;
   }
+  .footer {
+    margin-left: 25%;
+  }
 }
 @media screen and (max-width: 800px) and (min-width: 650px) {
   .navigation {
@@ -614,7 +625,7 @@ body {
     padding-top: 0%;
   }
   .brief-svg-container {
-    margin-top: -65px;
+    margin-top: -15%;
   }
   .li-info-item-name {
     font-size: 1rem;

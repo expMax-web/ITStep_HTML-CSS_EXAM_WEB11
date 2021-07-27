@@ -13,10 +13,10 @@
         <h2 class="h2-title-nav">Company</h2>
         <ul class="navigation-list-ul">
           <li class="navigation-list-li">
-            <a href="#" class="nav-link">Dashboard</a>
+            <a href="Dashboard.html" class="nav-link">Dashboard</a>
           </li>
           <li class="navigation-list-li">
-            <a href="#" class="nav-link">User Profile</a>
+            <a href="userprofile.html" class="nav-link">User Profile</a>
           </li>
           <li class="navigation-list-li">
             <a href="#" class="nav-link">Maps</a>
@@ -46,18 +46,62 @@
             Rick Owens' bed design but the back is...
           </p>
         </div>
-        <form action="$$">
-          <div class="header-form"></div>
-          <div>
-            <input type="text" /><input type="text" /><input type="text" />
+        <form class="form-container">
+          <div class="header-form">
+            <h3 class="form-title">Edit Profile</h3>
+            <span>Complete your profile</span>
           </div>
-          <div><input type="text" /><input type="text" /></div>
-          <input type="text" />
-          <div>
-            <input type="text" /><input type="text" /><input type="text" />
+          <div class="input-container input-container-top">
+            <label class="input-label_3child">
+              <span class="description-input">Company</span>
+              <input type="text" class="input" />
+            </label>
+            <label class="input-label_3child">
+              <span class="description-input">Username</span>
+              <input type="text" class="input" />
+            </label>
+            <label class="input-label_3child">
+              <span class="description-input">Email address</span>
+              <input type="email" class="input" />
+            </label>
           </div>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <input type="submit" placeholder="123" />
+          <div class="input-container">
+            <label class="input-label_2child">
+              <span class="description-input">First name</span>
+              <input type="text" class="input" />
+            </label>
+            <label class="input-label_2child">
+              <span class="description-input">Last name</span>
+              <input type="text" class="input" />
+            </label>
+          </div>
+          <div class="input-container">
+            <label class="address-label">
+              <span class="description-input">Address</span>
+              <input type="text" class="input" />
+            </label>
+          </div>
+          <div class="input-container">
+            <label class="input-label_3child">
+              <span class="description-input">City</span>
+              <input type="text" class="input" />
+            </label>
+            <label class="input-label_3child">
+              <span class="description-input">Country</span>
+              <input type="text" class="input" />
+            </label>
+            <label class="input-label_3child">
+              <span class="description-input">Postal code</span>
+              <input type="text" class="input" />
+            </label>
+          </div>
+          <label class="textarea-label">
+            <span class="description-input">About me</span>
+            <textarea cols="30" rows="5" class="text-area"></textarea>
+          </label>
+          <div class="button-container">
+            <button type="submit" class="button-profile">UPDATE PROFILE</button>
+          </div>
         </form>
       </div>
       <footer class="footer">
