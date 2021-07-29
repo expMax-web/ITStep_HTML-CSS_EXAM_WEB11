@@ -63,7 +63,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 .input-label_3child {
   width: 32%;
@@ -74,7 +74,7 @@
 .input {
   border: none;
   border-bottom: 1px solid grey;
-  height: 30px;
+  height: 35px;
   width: 100%;
 }
 .input-label_2child {
