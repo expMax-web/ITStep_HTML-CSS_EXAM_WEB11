@@ -161,7 +161,7 @@ body {
   padding: 5% 5% 5% 20%;
 }
 .brief-information-container {
-  height: 20%;
+  height: auto;
   min-height: 10vw;
   display: flex;
   padding: 2% 2% 1% 22%;
@@ -207,7 +207,7 @@ body {
   color: grey;
 }
 .li-info-item-value {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 .card-footer {
@@ -281,8 +281,6 @@ body {
   transform: scale(0.6);
 }
 .graphics-container {
-  height: 40%;
-  min-height: 22vw;
   display: flex;
   padding: 2% 2% 2% 22%;
   width: 100%;
@@ -348,7 +346,6 @@ body {
 }
 
 .task_list-container {
-  height: 45%;
   min-height: 20vw;
   display: flex;
   padding: 2% 2% 2% 22%;
@@ -457,7 +454,7 @@ body {
   border-collapse: collapse;
 }
 .table-staff tr {
-  height: 40px;
+  height: 50px;
 }
 .table-staff thead {
   text-align: left;
@@ -513,7 +510,7 @@ body {
   .brief-information-container {
     flex-direction: row;
     flex-wrap: wrap;
-    height: 40%;
+    height: 400px;
     align-items: center;
     padding-left: 30%;
     margin-bottom: 5%;
@@ -527,11 +524,14 @@ body {
   .brief-svg-container {
     margin-top: -10%;
   }
+  .card-brief-content {
+    height: 70%;
+  }
   .li-info-item-name {
     font-size: 1rem;
   }
   .card-footer {
-    height: 60%;
+    height: 40%;
   }
   .more-info-span {
     font-size: 1rem;
@@ -549,7 +549,7 @@ body {
     font-size: 1.3rem;
   }
   .graphics-container {
-    height: 28%;
+    height: 300px;
     padding: 2% 5% 2% 30%;
   }
   .graphics-title {
@@ -569,11 +569,9 @@ body {
     font-size: 0.9rem;
   }
   .task_list-container {
-    height: 70%;
     padding: 5% 5% 2% 30%;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: block;
   }
   .task-list-card {
     width: 100%;
@@ -587,11 +585,10 @@ body {
     margin-top: -5%;
   }
   .staff-list-card {
+    margin-top: 10%;
     width: 100%;
-    height: 40%;
+    height: 500px;
     padding: 3% 5% 5% 5%;
-    align-self: flex-end;
-    max-height: 300px;
   }
   .header-staff-list {
     left: 5%;
@@ -620,20 +617,21 @@ body {
   .brief-information-container {
     flex-direction: row;
     flex-wrap: wrap;
-    height: 40%;
+    height: 400px;
     padding-left: 5%;
   }
   .card-brief {
     width: 49%;
-    height: 40%;
-    padding: 4%;
+    height: 150px;
+    padding: 2% 4%;
     font-size: 1.2rem;
   }
   .card-brief-content {
     padding-top: 0%;
+    height: 60%;
   }
   .brief-svg-container {
-    margin-top: -15%;
+    margin-top: -10%;
   }
   .li-info-item-name {
     font-size: 1rem;
@@ -642,7 +640,7 @@ body {
     font-size: 1.8rem;
   }
   .card-footer {
-    height: 60%;
+    height: 40%;
   }
   .more-info-span {
     font-size: 1rem;
@@ -669,8 +667,8 @@ body {
     font-size: 1.3rem;
   }
   .graphics-container {
-    height: 28%;
-    padding: 2% 5% 2% 5%;
+    height: 300px;
+    padding: 3% 5% 2% 5%;
   }
   .card-graphics {
     width: 30%;
@@ -686,18 +684,16 @@ body {
     font-size: 0.9rem;
   }
   .task_list-container {
-    height: 70%;
     padding: 8% 5% 2% 5%;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: block;
   }
   .task-list-card {
     width: 100%;
-    height: 43%;
     padding: 3% 3% 5% 3%;
     min-height: 300px;
     max-height: 400px;
+    margin-bottom: 10%;
   }
   .header-task-list {
     left: 3%;
@@ -706,7 +702,6 @@ body {
   }
   .staff-list-card {
     width: 100%;
-    height: 40%;
     padding: 3% 3% 5% 3%;
     align-self: flex-end;
     min-height: 300px;
@@ -736,7 +731,7 @@ body {
   .brief-information-container {
     flex-direction: row;
     flex-wrap: wrap;
-    height: 40%;
+    height: 400px;
     padding-left: 5%;
   }
   .card-brief {
@@ -862,14 +857,14 @@ body {
   }
   .brief-information-container {
     flex-direction: column;
-    height: 80%;
+    height: 800px;
     padding-left: 5%;
     margin-top: 5%;
     margin-bottom: 10%;
   }
   .card-brief {
     width: 100%;
-    height: 20%;
+    height: 150px;
     padding: 4%;
     font-size: 1.2rem;
   }
@@ -880,7 +875,7 @@ body {
     width: 50px;
   }
   .brief-svg-container {
-    margin-top: -40px;
+    margin-top: -35px;
     padding: 5%;
   }
   .li-info-item-name {
@@ -914,15 +909,16 @@ body {
     font-size: 1.3rem;
   }
   .graphics-container {
-    height: 105%;
-    padding: 2% 5% 2% 5%;
-    flex-direction: column;
+    min-height: auto;
+    padding: 2% 5% 0 5%;
+    display: block;
   }
   .card-graphics {
     width: 100%;
-    height: 30%;
     padding: 5%;
-    min-height: 330px;
+    min-height: auto;
+    max-height: 400px;
+    margin-bottom: 20%;
   }
   .graphics-svg-container {
     margin-top: -50%;
@@ -941,16 +937,16 @@ body {
   }
 
   .task_list-container {
-    height: 77%;
-    padding: 15% 5% 5% 5%;
+    height: 900px;
+    padding: 10% 5% 5% 5%;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: block;
   }
   .task-list-card {
     width: 100%;
-    height: 45%;
+    min-height: auto;
     padding: 3% 5% 5% 5%;
+    margin-bottom: 20%;
   }
   .header-task-list {
     left: 5%;
