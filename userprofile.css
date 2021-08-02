@@ -81,7 +81,8 @@
   width: 49%;
 }
 .address-label {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .textarea-label {
   width: 100%;

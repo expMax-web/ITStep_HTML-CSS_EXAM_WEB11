@@ -9,7 +9,7 @@
   </head>
   <body>
     <nav class="navigation">
-      <h2 class="h2-title-nav">Company</h2>
+      <span class="title-nav">Company</span>
       <ul class="navigation-list-ul">
         <li class="navigation-list-li">
           <a href="Dashboard.html" class="nav-link">Dashboard</a>
@@ -32,7 +32,7 @@
       <button class="hide-button-nav">
         <img src="./menu.png" alt="" class="hide-button-img" />
       </button>
-      <h2 class="h2-title">User profile</h2>
+      <h1 class="main-title">User profile</h1>
       <section class="content-container">
         <article class="profile-div">
           <div class="avatar-container">
@@ -48,52 +48,68 @@
         </article>
         <form class="form-container">
           <div class="header-form">
-            <h3 class="form-title">Edit Profile</h3>
+            <h2 class="form-title">Edit Profile</h2>
             <span>Complete your profile</span>
           </div>
           <div class="input-container input-container-top">
-            <label class="input-label_3child">
-              <span class="description-input">Company</span>
-              <input type="text" class="input" />
-            </label>
-            <label class="input-label_3child">
-              <span class="description-input">Username</span>
-              <input type="text" class="input" />
-            </label>
-            <label class="input-label_3child">
-              <span class="description-input">Email address</span>
-              <input type="email" class="input" />
-            </label>
+            <div class="input-label_3child">
+              <label for="company">
+                <span class="description-input">Company</span>
+              </label>
+              <input type="text" class="input" id="company" />
+            </div>
+            <div class="input-label_3child">
+              <label for="company">
+                <span class="description-input">Username</span>
+              </label>
+              <input type="text" class="input" id="company" />
+            </div>
+            <div class="input-label_3child">
+              <label for="company">
+                <span class="description-input">Email address</span>
+              </label>
+              <input type="email" class="input" id="company" />
+            </div>
           </div>
           <div class="input-container">
-            <label class="input-label_2child">
-              <span class="description-input">First name</span>
-              <input type="text" class="input" />
-            </label>
-            <label class="input-label_2child">
-              <span class="description-input">Last name</span>
-              <input type="text" class="input" />
-            </label>
+            <div class="input-label_2child">
+              <label for="FN">
+                <span class="description-input">First name</span>
+              </label>
+              <input type="text" class="input" id="FN" />
+            </div>
+            <div class="input-label_2child">
+              <label for="LN">
+                <span class="description-input">Last name</span>
+              </label>
+              <input type="text" class="input" id="LN" />
+            </div>
           </div>
-          <div class="input-container">
-            <label class="address-label">
+          <div class="input-container address-label">
+            <label class="address-label" for="address">
               <span class="description-input">Address</span>
-              <input type="text" class="input" />
             </label>
+            <input type="text" class="input" id="address" />
           </div>
           <div class="input-container">
-            <label class="input-label_3child">
-              <span class="description-input">City</span>
-              <input type="text" class="input" />
-            </label>
-            <label class="input-label_3child">
-              <span class="description-input">Country</span>
-              <input type="text" class="input" />
-            </label>
-            <label class="input-label_3child">
-              <span class="description-input">Postal code</span>
-              <input type="text" class="input" />
-            </label>
+            <div class="input-label_3child">
+              <label for="City">
+                <span class="description-input">City</span>
+              </label>
+              <input type="text" class="input" id="City" />
+            </div>
+            <div class="input-label_3child">
+              <label for="Country">
+                <span class="description-input">Country</span>
+              </label>
+              <input type="text" class="input" id="Country" />
+            </div>
+            <div class="input-label_3child">
+              <label for="Postal">
+                <span class="description-input">Postal code</span></label
+              >
+              <input type="text" class="input" id="Postal" />
+            </div>
           </div>
           <label class="textarea-label">
             <span class="description-input">About me</span>

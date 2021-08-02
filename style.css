@@ -9,7 +9,7 @@ body {
   height: 100%;
 }
 .main-container {
-  height: 100%;
+  height: auto;
   font-size: 1.1rem;
 }
 .navigation {
@@ -31,7 +31,7 @@ body {
 .hide-button-img {
   width: 100%;
 }
-.h2-title {
+.main-title {
   padding: 2% 1% 1% 25%;
 }
 .navigation-list-ul {
@@ -149,9 +149,12 @@ body {
   transform: scale(0.4);
 }
 
-.h2-title-nav {
+.title-nav {
   padding: 10%;
   border-bottom: 1px solid grey;
+  font-weight: bold;
+  font-size: 1.8rem;
+  display: block;
 }
 .nav-link {
   text-decoration: none;
@@ -187,6 +190,8 @@ body {
 .ul-info-list {
   list-style-type: none;
   padding-left: 40%;
+  text-align: right;
+  width: 100%;
 }
 .card-hr {
   width: 100%;
@@ -196,10 +201,6 @@ body {
 .card-link {
   text-decoration: none;
   color: inherit;
-  width: 100%;
-}
-.ul-info-list {
-  text-align: right;
   width: 100%;
 }
 .li-info-item-name {
@@ -484,7 +485,7 @@ body {
 }
 .footer {
   margin-left: 22%;
-  height: 10%;
+  height: 100px;
   padding: 2% 2% 2% 0;
   display: flex;
   justify-content: space-between;
@@ -539,10 +540,10 @@ body {
   .navigation {
     width: 25%;
   }
-  .h2-title {
+  .main-title {
     padding: 3% 1% 1% 30%;
   }
-  .h2-title-nav {
+  .title-nav {
     padding: 10%;
   }
   .navigation-list-ul {
@@ -648,10 +649,10 @@ body {
   .navigation {
     width: 25%;
   }
-  .h2-title {
+  .main-title {
     padding: 3% 1% 5% 12%;
   }
-  .h2-title-nav {
+  .title-nav {
     padding: 10%;
   }
   .hide-button-nav {
@@ -761,14 +762,11 @@ body {
   .more-info-span {
     font-size: 0.9rem;
   }
-  .h2-title {
+  .main-title {
     padding: 4% 1% 5% 12%;
   }
-  .h2-title-nav {
-    padding: 10%;
-  }
   .hide-button-nav {
-    top: 2.5%;
+    top: 3%;
     left: 5%;
     display: unset;
   }
@@ -780,15 +778,16 @@ body {
     font-size: 1.3rem;
   }
   .graphics-container {
-    height: 125%;
-    padding: 2% 5% 2% 5%;
-    flex-direction: column;
+    height: auto;
+    padding: 0% 5%;
+    display: block;
   }
   .card-graphics {
     width: 100%;
     padding: 5%;
     max-height: 400px;
     min-height: 300px;
+    margin-top: 50px;
   }
   .graphics-svg-container {
     margin-top: -50%;
@@ -807,11 +806,10 @@ body {
   }
 
   .task_list-container {
-    height: 70%;
+    height: 800px;
     padding: 8% 5% 2% 5%;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: block;
   }
   .task-list-card {
     width: 100%;
@@ -819,6 +817,7 @@ body {
     padding: 3% 5% 5% 5%;
     min-height: 320px;
     max-height: 350px;
+    margin-bottom: 50px;
   }
   .header-task-list {
     left: 5%;
@@ -890,10 +889,10 @@ body {
   .more-info-span {
     font-size: 1rem;
   }
-  .h2-title {
+  .main-title {
     padding: 5% 1% 5% 15%;
   }
-  .h2-title-nav {
+  .title-nav {
     padding: 10%;
   }
   .hide-button-nav {
