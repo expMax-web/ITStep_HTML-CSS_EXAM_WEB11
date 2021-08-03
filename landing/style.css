@@ -1,3 +1,4 @@
+@import url(carousel.css);
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,19 +11,26 @@ body {
 }
 .landing-header {
   position: fixed;
-  display: flex;
-  justify-content: space-between;
   width: 100%;
   height: 60px;
   border-bottom: 1px solid grey;
-  align-items: center;
-  padding-left: 2%;
   background-color: white;
   z-index: 1;
 }
+.header-content-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2%;
+}
+.navigation-menu {
+  width: 50%;
+}
 .header-ul {
   list-style-type: none;
-  width: 80%;
 }
 .header-title {
   font-size: 1.5rem;
@@ -39,8 +47,10 @@ body {
   text-decoration: none;
 }
 .header-social-div {
-  width: 20%;
+  width: 50%;
+  text-align: right;
   opacity: 0.8;
+  padding-right: 5%;
 }
 .social-link {
   padding: 0 4% 0 4%;
@@ -48,10 +58,14 @@ body {
 .header-social-img {
   width: 25px;
 }
+.main-container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
 .greeting-container {
   padding-top: 60px;
   width: 100%;
-  height: 800px;
+  height: 700px;
   overflow: hidden;
   display: flex;
   border-bottom: 1px solid grey;
@@ -64,17 +78,17 @@ body {
   flex-direction: column;
   padding: 10%;
 }
-.greeting-h1-title {
-  font-size: 4rem;
+.greeting-title {
+  font-size: 3rem;
   width: 100%;
   font-weight: 500;
 }
-.greeting-p-high {
-  font-size: 2rem;
+.greeting-text-high {
+  font-size: 1.5rem;
   padding-top: 5%;
 }
-.greeting-p-small {
-  font-size: 1.5rem;
+.greeting-text-small {
+  font-size: 1.2rem;
   padding: 5% 0;
 }
 .greeting-button {
@@ -96,17 +110,15 @@ body {
   width: 50%;
   height: 100%;
   overflow: hidden;
-  position: relative;
 }
 .greeting-img {
-  top: -200px;
-  left: -400px;
-  position: absolute;
-  transform: scale(0.8);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .story-container {
   width: 100%;
-  height: 600px;
+  height: 550px;
   display: flex;
   border-bottom: 1px solid grey;
 }
@@ -122,12 +134,12 @@ body {
   order: 1;
 }
 .story-title {
-  font-size: 4rem;
+  font-size: 3rem;
   width: 100%;
   font-weight: 500;
 }
 .story-text {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 5% 0;
 }
 .story-button {
@@ -149,22 +161,19 @@ body {
   width: 35%;
   height: 100%;
   overflow: hidden;
-  position: relative;
 }
 .order-left {
   order: 0;
 }
 .story1-img {
-  top: -200px;
-  left: -400px;
-  position: absolute;
-  transform: scale(0.8);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .story2-img {
-  transform: scale(0.5);
-  position: absolute;
-  top: -350px;
-  left: -500px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .gallery-container {
   height: auto;
@@ -176,35 +185,49 @@ body {
   text-align: center;
   margin: 2% 0;
 }
-.img-gallery-container {
+.img-container {
+  position: relative;
+}
+.hide-content {
+  opacity: 0;
+  position: absolute;
   width: 100%;
-  height: 200px;
-  max-height: 40%;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  font-size: 0;
+  top: 0;
+  left: 0;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.575);
+  height: 100%;
+  padding-top: 100px;
 }
-.img1 {
-  width: 14.5%;
-  transform: scaleY(0.84);
-  font-size: 0;
+.hide-title {
+  margin-bottom: 40px;
+  font-size: 2rem;
+  text-shadow: 2px 2px 2px black;
 }
-.img2 {
-  width: 28.5%;
-  transform: scaleY(0.8);
-  font-size: 0;
+.hide-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 2px black;
 }
-
-.img3 {
-  width: 28.5%;
-  transform: scaleY(0.8);
-  font-size: 0;
+.img-container:hover .hide-content {
+  transition: all 2s;
+  opacity: 1;
 }
-
-.img4 {
-  width: 29%;
-  font-size: 0;
+.hide-button {
+  background-color: inherit;
+  color: white;
+  padding: 10px 40px;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 2px black;
+}
+.hide-button:hover {
+  background-color: rgba(189, 189, 189, 0.26);
+}
+.hide-button:active {
+  background-color: rgba(228, 222, 222, 0.363);
 }
 .features-container {
   display: grid;
@@ -247,12 +270,12 @@ body {
   grid-area: feature-section6;
 }
 
-.title-features-container {
+.title-features {
   font-size: 4rem;
   width: 100%;
   font-weight: 500;
   text-align: center;
-  margin: 2% 0;
+  margin: 3% 0;
 }
 
 .features-section-img {
@@ -266,7 +289,7 @@ body {
   font-size: 1.3rem;
 }
 .form-container {
-  padding: 5% 15%;
+  padding: 3% 15%;
 }
 .input-group-info {
   width: 100%;

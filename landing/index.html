@@ -6,55 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </head>
   <body>
     <header class="landing-header">
-      <ul class="header-ul">
-        <span class="header-title">TOUR-GUIDE</span>
-        <li class="header-li">
-          <a href="#" class="header-link"><span>Stories</span></a>
-        </li>
-        <li class="header-li">
-          <a href="#" class="header-link"><span>Gallery</span></a>
-        </li>
-        <li class="header-li">
-          <a href="#" class="header-link"><span>Features</span></a>
-        </li>
-        <li class="header-li">
-          <a href="#" class="header-link"><span>Write to ass</span></a>
-        </li>
-      </ul>
-      <div class="header-social-div">
-        <a href="#" class="header-link social-link"
-          ><img src="twitter-128.png" alt="twitter" class="header-social-img"
-        /></a>
-        <a href="#" class="header-link social-link">
-          <img src="facebook-128.png" alt="facebook" class="header-social-img"
-        /></a>
-        <a href="#" class="header-link social-link"
-          ><img
-            src="instagram-2-128.png"
-            alt="instagram"
-            class="header-social-img"
-        /></a>
-        <a href="#" class="header-link social-link"
-          ><img src="youtube-128.png" alt="youtube" class="header-social-img"
-        /></a>
-        <a href="#" class="header-link social-link"
-          ><img src="gmail-128.png" alt="gmail" class="header-social-img"
-        /></a>
+      <div class="header-content-container">
+        <nav class="navigation-menu">
+          <ul class="header-ul">
+            <span class="header-title">TOUR-GUIDE</span>
+            <li class="header-li">
+              <a href="#" class="header-link"><span>Stories</span></a>
+            </li>
+            <li class="header-li">
+              <a href="#" class="header-link"><span>Gallery</span></a>
+            </li>
+            <li class="header-li">
+              <a href="#" class="header-link"><span>Features</span></a>
+            </li>
+            <li class="header-li">
+              <a href="#" class="header-link"><span>Write to ass</span></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-social-div">
+          <a href="#" class="header-link social-link"
+            ><img src="twitter-128.png" alt="twitter" class="header-social-img"
+          /></a>
+          <a href="#" class="header-link social-link">
+            <img
+              src="facebook-128.png"
+              alt="facebook"
+              class="header-social-img"
+          /></a>
+          <a href="#" class="header-link social-link"
+            ><img
+              src="instagram-2-128.png"
+              alt="instagram"
+              class="header-social-img"
+          /></a>
+          <a href="#" class="header-link social-link"
+            ><img src="youtube-128.png" alt="youtube" class="header-social-img"
+          /></a>
+          <a href="#" class="header-link social-link"
+            ><img src="gmail-128.png" alt="gmail" class="header-social-img"
+          /></a>
+        </div>
       </div>
     </header>
     <main class="main-container">
       <article class="greeting-container">
         <section class="greeting-text-container">
-          <h1 class="greeting-h1-title">Let's hit the road</h1>
-          <p class="greeting-p-high">
+          <h1 class="greeting-title">Let's hit the road</h1>
+          <p class="greeting-text-high">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
             laudantium iure harum dolore excepturi eos vero voluptates nisi hic
             culpa.
           </p>
-          <p class="greeting-p-small">
+          <p class="greeting-text-small">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
             earum laudantium saepe magnam porro molestias!
           </p>
@@ -102,19 +114,78 @@
       </article>
       <article class="gallery-container">
         <h2 class="gallery-title">Gallery</h2>
-        <div class="img-gallery-container">
-          <img
-            src="./gallery/d9fe858f7779a9066d1a1e71714717a6--campfire-meals-camp-meals.jpg"
-            alt=""
-            class="img1"
-          />
-          <img src="./gallery/i.jpg" alt="" class="img2" />
-          <img src="./gallery/istock-175438846.jpg" alt="" class="img3" />
-          <img src="./gallery/i.jpg" alt="" class="img2" />
+        <div
+          class="carousel"
+          data-flickity='{ "imagesLoaded": true, "wrapAround": true }'
+        >
+          <div class="img-container">
+            <img src="./gallery/1.jpg" />
+            <div class="hide-content">
+              <h3 class="hide-title">Title image</h3>
+              <p class="hide-text">Description image</p>
+              <button class="hide-button">More</button>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="./gallery/2.jpg" />
+            <div class="hide-content">
+              <h3 class="hide-title">Title image</h3>
+              <p class="hide-text">Description image</p>
+              <button class="hide-button">More</button>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="./gallery/3.jpg" />
+            <div class="hide-content">
+              <h3 class="hide-title">Title image</h3>
+              <p class="hide-text">Description image</p>
+              <button class="hide-button">More</button>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="./gallery/4.jpg" />
+            <div class="hide-content">
+              <h3 class="hide-title">Title image</h3>
+              <p class="hide-text">Description image</p>
+              <button class="hide-button">More</button>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="./gallery/5.jpg" />
+            <div class="hide-content">
+              <h3 class="hide-title">Title image</h3>
+              <p class="hide-text">Description image</p>
+              <button class="hide-button">More</button>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="./gallery/6.jpg" />
+            <div class="hide-content">
+              <h3 class="hide-title">Title image</h3>
+              <p class="hide-text">Description image</p>
+              <button class="hide-button">More</button>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="./gallery/7.jpg" />
+            <div class="hide-content">
+              <h3 class="hide-title">Title image</h3>
+              <p class="hide-text">Description image</p>
+              <button class="hide-button">More</button>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="./gallery/8.jpg" />
+            <div class="hide-content">
+              <h3 class="hide-title">Title image</h3>
+              <p class="hide-text">Description image</p>
+              <button class="hide-button">More</button>
+            </div>
+          </div>
         </div>
       </article>
       <article>
-        <h2 class="title-features-container">Features</h2>
+        <h2 class="title-features">Features</h2>
         <div class="features-container">
           <div class="features-section feature-section1">
             <img src="airplane-48.png" alt="" class="features-section-img" />
